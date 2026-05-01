@@ -2,9 +2,9 @@
 // data que deverá ser um objeto -> infos:{} || []
 // error que deverá ser um booleano 
 // exportar para utilizar na resposta do método get
-export interface CustomResponse {
+export interface CustomResponse<T> {
     data: {
-        infos: {} | []
+        infos: T
     }
     error: boolean
 }

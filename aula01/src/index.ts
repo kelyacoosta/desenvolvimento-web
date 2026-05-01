@@ -7,8 +7,12 @@ const PORT = 3000;
 app.use(express.json())
 
 app.get('/', (req: Request, res: Response) => {
-    const createResponse: CustomResponse = {
-        data: { infos: { nome: 'Kely André' } },
+    const createResponse: CustomResponse<{ nome: string }> = {
+        data: {
+            infos: {
+                nome: 'Kely André'
+            }
+        },
         error: false
     }
     res.json(createResponse)
