@@ -3,6 +3,8 @@
 // error que deverá ser um booleano 
 // exportar para utilizar na resposta do método get
 export interface CustomResponse {
-    data: object | [];
-    error: boolean;
+    data: {
+        infos: {} | []
+    }
+    error: boolean
 }

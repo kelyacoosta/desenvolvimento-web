@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.get('/', (req: Request, res: Response<CustomResponse>) => {
     const response: CustomResponse = {
-        data: { nome: 'Kely André' },
+        data: { infos: { nome: 'Kely André' } },
         error: false
     }
     res.json(response)
